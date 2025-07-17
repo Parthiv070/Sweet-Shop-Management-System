@@ -1,6 +1,6 @@
 # Sweet Shop Management System
 
-A full-stack **Sweet Shop Management System** built using **Spring Boot** and **MongoDB** to manage sweets inventory, sales, and restocking. This project also includes unit testing with **JUnit** and **Mockito**, and is version-controlled using Git.
+A **Sweet Shop Management System** built using **Spring Boot** and **MongoDB** to manage sweets inventory, sales, and restocking. This project also includes unit testing with **JUnit** and **Mockito**, and is version-controlled using Git.
 
 ---
 
@@ -94,17 +94,26 @@ SweetServiceTest:
 ✔ testRestockSweet PASSED
 ```
 
-
+![Add testing ](images/test-report-intellij.png)
 
 ---
 
-## 📷 Screenshots (Frontend Optional)
+## 📷 Screenshots (Hoppscotch Api Fetch)
 
-> Replace with your screenshots (UI if built or Hoppscotch test screenshots)
-
-* ![Add Sweet API](screenshots/add-sweet.png)
-* ![Purchase Sweet](screenshots/purchase-sweet.png)
-* ![Search by Category](screenshots/search-category.png)
+> Add Sweets : 
+* ![Add Sweet API](images/api-sweet-add.png)
+> View Sweets : 
+* ![View Sweet API](images/api-sweet-view.png)
+> Delete Sweets : 
+* ![Delete Sweet API](images/api-sweet-delete.png)
+> Update Sweets : 
+* ![Update Sweet API](images/api-sweet-update.png)
+> Search Sweets : 
+* ![Search by Category](images/api-sweet-research.png)
+> Purchase Sweets : 
+* ![Purchase Sweet](images/api-sweet-purchase.png)
+> Restock Sweets : 
+* ![Restock Sweet](images/api-sweet-restock.png)
 
 ---
 
