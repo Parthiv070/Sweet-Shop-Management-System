@@ -2,7 +2,6 @@ package com.sweetshop.service;
 
 import com.sweetshop.model.Sweet;
 import com.sweetshop.repository.SweetRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,12 +10,11 @@ import java.util.List;
 public class SweetService {
 
     private final SweetRepository sweetRepository;
+    private final SequenceGeneratorService sequenceGeneratorService;
 
-    @Autowired
-    private SequenceGeneratorService sequenceGeneratorService;
-
-    public SweetService(SweetRepository sweetRepository) {
+    public SweetService(SweetRepository sweetRepository, SequenceGeneratorService sequenceGeneratorService) {
         this.sweetRepository = sweetRepository;
+        this.sequenceGeneratorService = sequenceGeneratorService;
     }
 
     public Sweet addSweet(Sweet sweet) {
@@ -38,7 +36,6 @@ public class SweetService {
         sweetRepository.deleteById(id);
     }
 
-    // 🔍 Search Features
     public List<Sweet> searchByName(String name) {
         return sweetRepository.findByNameContainingIgnoreCase(name);
     }
@@ -65,5 +62,4 @@ public class SweetService {
         sweet.setQuantity(sweet.getQuantity() + quantity);
         return sweetRepository.save(sweet);
     }
-
 }
